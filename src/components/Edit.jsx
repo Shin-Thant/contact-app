@@ -153,7 +153,7 @@ const Edit = () => {
 };
 
 function ErrorMessage({ message }) {
-	return <h2 className="text-red-500 text-semibold ml-2">{message}</h2>;
+  return <h2 className="text-red-500 text-semibold ml-2">{message}</h2>;
 }
 
 export default Edit;
