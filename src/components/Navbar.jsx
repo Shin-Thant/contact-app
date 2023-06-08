@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { toggleNavbar } from "../redux/service/navbarSlice";
 import SearchInput from "./SearchInput";
-import UserMenu from "./UserMenu";
+import UserMenu from "../component/UserMenu"
 
 const Navbar = () => {
 	const isOpen = useSelector((state) => state.navbar.isOpen);

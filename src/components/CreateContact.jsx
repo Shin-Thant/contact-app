@@ -27,7 +27,7 @@ const CreateContact = () => {
     <>
       <div className=" flex justify-center items-center h-screen bg-gradient-to-r from-[#e5e5f6] to-blue-500">
         <form
-          className=" xl:w-96 md:w-96 w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l glassmorphic rounded-lg p-7"
+          className=" xl:w-96 md:w-96 w-80 flex flex-col bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l glassmorphic rounded-lg p-7"
           onSubmit={form.onSubmit(async (values) => {
             try {
               const { data } = await createContact({
@@ -44,10 +44,13 @@ const CreateContact = () => {
             }
           })}
         >
-          <h1 className=" text-center mb-3 text-blue-600 text-xl font-semibold ">
-            Create Contact
-          </h1>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col items-center">
+            <iframe src="https://embed.lottiefiles.com/animation/34906"></iframe>
+            <h1 className=" text-center text-blue-600 text-xl font-semibold ">
+              Create Contact
+            </h1>
+          </div>
+          <div className="flex flex-col gap-1">
             <TextInput
               mt="sm"
               label="Name"
@@ -72,7 +75,7 @@ const CreateContact = () => {
               placeholder="Address"
               {...form.getInputProps("address")}
             />
-            <div className="flex ">
+            <div className="flex mt-2">
               <button
                 disabled={isLoading && true}
                 type="submit"
