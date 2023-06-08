@@ -37,9 +37,9 @@ const Login = () => {
 
 	return (
 		<div className="bg-gradient-to-r from-[#e5e5f6] to-blue-500">
-			<div className=" flex justify-center items-center h-screen">
-				<div className="flex shadow-2xl items-center">
-					<img
+			<div className=" flex  justify-center items-center h-screen">
+				<div className="flex lg:flex-row md:flex-col-reverse shadow-2xl items-center">
+					<img className="hidden md:block mt-10"
 						src="https://cdni.iconscout.com/illustration/premium/thumb/online-registration-7964197-6381807.png?f=webp"
 						alt=""
 					/>
@@ -61,7 +61,7 @@ const Login = () => {
 								console.log(error);
 							}
 						})}
-						className=" xl:w-96 md:w-96 w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded-lg p-[3.9rem]"
+						className=" xl:w-96 md:w-full w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded-lg p-[3.9rem]"
 					>
 						<h2
 							className=" flex flex-col text-center justify-center text-gray-500 font-medium text-[28px]
@@ -82,12 +82,9 @@ const Login = () => {
 							placeholder=" Enter your Password"
 							variant="filled"
 						/>
-						<div className=" flex gap-1">
-							<p className=" select-none text-gray-500">
-								New to our service?
-							</p>
+						<div className=" flex justify-center">
 							<Link to={"/register"}>
-								<p className=" select-none text-blue-500 cursor-pointer">
+								<p className=" select-none text-blue-500 cursor-pointer w-full">
 									Register here.
 								</p>
 							</Link>

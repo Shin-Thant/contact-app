@@ -22,9 +22,9 @@ const Register = () => {
 	return (
 		<div className="bg-gradient-to-r from-[#e5e5f6] to-blue-500">
 			<div className=" flex justify-center items-center h-screen">
-				<div className="flex items-center shadow-2xl rounded-lg">
+			<div className="flex lg:flex-row md:flex-col-reverse shadow-2xl items-center">
 					<img
-						className=""
+						 className="hidden md:block mt-10"
 						src="https://cdni.iconscout.com/illustration/premium/thumb/points-out-the-registration-form-in-the-mobile-application-3411138-2844271.png?f=webp"
 						alt=""
 					/>
@@ -40,7 +40,7 @@ const Register = () => {
 								console.log(error);
 							}
 						})}
-						className=" xl:w-96 md:w-96 w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded glassmorphic rounded-lg p-7"
+						className=" xl:w-96 md:w-full w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded glassmorphic rounded-lg p-7"
 					>
 						<h2
 							className=" flex flex-col text-center justify-center text-gray-500 font-medium text-[32px]

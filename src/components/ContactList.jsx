@@ -166,11 +166,19 @@ const ContactList = () => {
 
 			<div className="flex justify-center md:justify-start">
 				<div
-					className={`absolute ${
+					className={`absolute
+					${
+						isOpen ? "lg:w-[75vw]" : "lg:w-[95vw]"
+					}
+					${
 						isOpen ? "lg:left-[305px]" : "lg:left-0"
 					} ${
 						isOpen ? "lg:px-0" : "lg:px-3"
-					} duration-500 transition-all`}
+					} duration-500 transition-all
+					${
+						isOpen ? "lg:w-[75vw]" : "lg:w-[95vw]"
+					}
+					`}
 				>
 					<div className="lg:w-[75vw] w-screen  flex justify-start pt-0 md:pt-10 text-white">
 						<Table className="">

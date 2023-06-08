@@ -85,7 +85,7 @@ const Navbar = () => {
 							<path fill="#EA4335" d="M20 16V6h-4v14z"></path>
 							<path fill="none" d="M0 0h36v36H0z"></path>
 						</svg>
-						<h1 className="text-xl">Create Contacts</h1>
+						<h1 className="">Create Contacts</h1>
 					</div>
 				</Link>
 
@@ -112,13 +112,6 @@ const Navbar = () => {
 							<p className="">Contacts</p>
 						</NavLink>
 
-						<NavLink
-							to="/other"
-							className="space-x-5 flex items-center p-3 px-5 text-xl"
-						>
-							<BiArchiveIn className="" />
-							<p className="">Other contacts</p>
-						</NavLink>
 					</ul>
 				</div>
 			</div>
