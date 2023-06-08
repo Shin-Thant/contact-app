@@ -62,7 +62,7 @@ const Edit = () => {
   const updateHandler = async (data) => {
     const result = await UpdateContact({ id, contact: data, token });
 
-    if (result.data.success) {
+    if (result?.data?.success) {
       nav("/");
     }
   };
@@ -70,10 +70,10 @@ const Edit = () => {
   return (
     <div>
       <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-[#e5e5f6] to-blue-500">
-        <div className="xl:w-1/2 md:w-1/2 w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded-lg p-[2.9rem]">
+        <div className="xl:w-1/3 md:w-1/2 w-80 flex flex-col gap-8 bg-[#ffffff19] backdrop-blur-sm border-t-[rgba(255,255,255,0.5)] border-l-[rgba(255,255,255,0.5)] border-solid border-t border-l rounded-lg p-[2.9rem]">
           <form onSubmit={handleSubmit(updateHandler)}>
             <h1 className="text-xl text-blue-700 font-semibold text-center mb-5">
-              Create Your Contact
+              Update Your Contact
             </h1>
             <div className="space-y-5">
               <div className="flex items-center gap-2">
@@ -135,21 +135,21 @@ const Edit = () => {
                 )}
               </div>
 
-              <div className="flex">
+              <div className="flex justify-evenly">
                 <button
                   type="submit"
-                  className={`bg-blue-600 text-white hover:bg-gray-500 px-4 py-1 rounded-lg w-28 md:w-44 lg:w-44 h-14 mx-auto block transition duration-300 ${
+                  className={`bg-blue-600 text-white hover:bg-gray-500 px-4 py-1 rounded-lg w-28 md:w-44 lg:w-44 h-14 block transition duration-300 ${
                     isLoading && "btn-disabled"
                   }`}
                 >
                   {isLoading ? (
-                    <ImSpinner2 className="animate-spin mx-auto h-5 w-5" />
+                    <ImSpinner2 className="animate-spin h-5 w-5 md:" />
                   ) : (
                     "Update Contact"
                   )}
                 </button>
                 <Link to={"/"}>
-                  <button className="py-1 px-4 h-14 bg-gray-500 rounded-lg text-white">
+                  <button className="py-1 px-14 md:px-5 h-14 bg-gray-500 rounded-lg text-white">
                     Back
                   </button>
                 </Link>

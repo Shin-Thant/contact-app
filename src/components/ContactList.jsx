@@ -84,10 +84,10 @@ const ContactList = () => {
 		?.map((contact) => {
 			return (
 				<tr className="contact-list" key={contact?.id}>
-					<td className="hidden md:table-cell">
+					<td className="">
 						{contact?.name === null ? "exampleName" : contact?.name}
 					</td>
-					<td>
+					<td className="hidden md:table-cell">
 						{contact?.email === null
 							? "example@gmail.com"
 							: contact?.email}
@@ -184,10 +184,10 @@ const ContactList = () => {
 						<Table className="">
 							<thead className="">
 								<tr className="">
-									<th className="hidden md:table-cell">
+									<th className="">
 										Name
 									</th>
-									<th className="">Email</th>
+									<th className="hidden md:table-cell">Email</th>
 									<th className="hidden lg:table-cell">
 										Phone Number
 									</th>

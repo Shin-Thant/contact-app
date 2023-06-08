@@ -61,7 +61,7 @@ const Navbar = () => {
 
 			{/* SIDEBAR */}
 			<div
-				className={`lg:w-[15rem] absolute top-0 lg:top-auto z-50 text-center bg-white shadow lg:shadow-none shadow-black h-screen lg:h-auto cursor-pointer transition-all duration-500 my-0 lg:my-5 ${
+				className={`md:w-[15rem] w-1/2 absolute top-0 lg:top-auto z-50 text-center bg-white shadow lg:shadow-none shadow-black h-screen lg:h-auto cursor-pointer transition-all duration-500 my-0 lg:my-5 ${
 					isOpen ? "left-0" : "left-[-400px]"
 				}`}
 			>
@@ -89,13 +89,13 @@ const Navbar = () => {
 					</div>
 				</Link>
 
-				<div className="flex lg:hidden items-center ms-2 mt-2 space-x-3">
+				<div className="flex lg:hidden items-center ms-1 mt-2 space-x-3 md:space-x-8">
 					<img
 						src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png"
-						className="h-6"
+						className="h-5"
 						alt=""
 					/>
-					<span className="text-2xl">Friends</span>
+					<span className="text-xl font-semibold">Friends</span>
 					<AiOutlineClose
 						className="ms-2"
 						onClick={() => dispatch(toggleNavbar())}
