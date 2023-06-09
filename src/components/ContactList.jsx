@@ -141,7 +141,6 @@ const ContactList = () => {
   }
 
   return (
-    <>
       <div className="flex justify-center md:justify-start">
         {data?.contacts?.data.length === 0 ? (
           <div className="flex justify-center flex-col gap-3 items-center h-screen w-[80%] mx-auto">
@@ -156,11 +155,11 @@ const ContactList = () => {
           </div>
         ) : (
           <div
-            className={`absolute ${isOpen ? "lg:left-[305px]" : "lg:left-0"} ${
+            className={`lg:w-[70%] w-screen absolute ${isOpen ? "lg:left-[305px]" : "lg:left-0"} ${
               isOpen ? "lg:px-0" : "lg:px-3"
-            } duration-500 transition-all`}
+            } duration-500 transition-all ${isOpen ? "lg:w-[70%]" : "lg:w-full"}`}
           >
-            <div className="lg:w-[75vw] w-screen  flex justify-start pt-0 md:pt-10 text-white">
+            <div className="flex justify-start pt-0 md:pt-10 text-white">
               <Table className="">
                 <thead className="">
                   <tr className="">
@@ -176,7 +175,6 @@ const ContactList = () => {
           </div>
         )}
       </div>
-    </>
   );
 };
 

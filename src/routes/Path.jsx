@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import Routeguard from "../component/Routeguard";
+import Routeguard from "../components/Routeguard";
 import ProfileDetail from "../pages/ProfileDetail";
 
 

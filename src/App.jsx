@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="">
+    <div className="w-full h-screen flex flex-col">
       {/* <SidebarProvider>
         <ThemeProvider>
           <AppTheme>
